@@ -30,7 +30,7 @@ const projects = [
     description: 'AI system analyzing nutritional data with visualization and health insights.',
     tech: ['Python', 'NumPy', 'MATLAB', 'Firebase'],
     color: 'from-primary via-secondary to-primary',
-    github: null,
+    github: 'https://github.com/kabirnagdev/Consumption-Analysis',
   },
   {
     id: 4,
