@@ -1,8 +1,13 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import anime from 'animejs';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Code, Zap, CheckCircle } from 'lucide-react';
+
+interface ProjectStat {
+  label: string;
+  value: string;
+}
 
 interface Project {
   id: number;
@@ -12,6 +17,8 @@ interface Project {
   tech: string[];
   color: string;
   github: string | null;
+  stats: ProjectStat[];
+  features: string[];
 }
 
 interface ProjectCardProps {
@@ -20,6 +27,44 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
+  const statsRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            // Animate stats when visible
+            anime({
+              targets: statsRef.current?.querySelectorAll('.stat-value'),
+              scale: [0.5, 1],
+              opacity: [0, 1],
+              delay: anime.stagger(100),
+              duration: 600,
+              easing: 'easeOutElastic(1, .5)',
+            });
+            anime({
+              targets: statsRef.current?.querySelectorAll('.feature-item'),
+              translateX: [-20, 0],
+              opacity: [0, 1],
+              delay: anime.stagger(80, { start: 300 }),
+              duration: 500,
+              easing: 'easeOutQuad',
+            });
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleMouseEnter = () => {
     anime({
@@ -55,17 +100,49 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Project Image Placeholder */}
-        <div className={`h-64 bg-gradient-to-br ${project.color} relative overflow-hidden`}>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-6xl font-bold text-background/20 font-mono">{project.id}</div>
-              <p className="text-sm text-background/40 font-mono mt-2">Project Preview</p>
+        {/* Project Stats & Features Panel */}
+        <div ref={statsRef} className={`h-64 bg-gradient-to-br ${project.color} relative overflow-hidden p-6`}>
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-4 right-4 w-32 h-32 border border-background/30 rounded-full" />
+            <div className="absolute bottom-4 left-4 w-24 h-24 border border-background/30 rounded-full" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-background/20 rounded-full" />
+          </div>
+
+          {/* Stats Grid */}
+          <div className="relative z-10 grid grid-cols-3 gap-3 mb-4">
+            {project.stats.map((stat, index) => (
+              <div 
+                key={index} 
+                className="stat-value bg-background/20 backdrop-blur-sm rounded-lg p-3 text-center border border-background/10"
+              >
+                <div className="text-2xl font-bold text-background font-mono">{stat.value}</div>
+                <div className="text-xs text-background/70 mt-1">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Features List */}
+          <div className="relative z-10 mt-4">
+            <div className="flex items-center gap-2 mb-2">
+              <Zap className="w-4 h-4 text-background/80" />
+              <span className="text-xs font-semibold text-background/80 uppercase tracking-wider">Key Features</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {project.features.map((feature, index) => (
+                <div 
+                  key={index}
+                  className="feature-item flex items-center gap-1.5 bg-background/20 backdrop-blur-sm px-3 py-1.5 rounded-full border border-background/10"
+                >
+                  <CheckCircle className="w-3 h-3 text-background/80" />
+                  <span className="text-xs text-background font-medium">{feature}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Animated scanning line */}
-          <div className="absolute inset-0 animate-scan opacity-30 bg-gradient-to-r from-transparent via-white to-transparent" />
+          {/* Animated pulse effect */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-background/10 rounded-full animate-ping opacity-20" />
         </div>
 
         {/* Project Info */}
