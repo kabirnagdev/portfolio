@@ -23,7 +23,7 @@ const projects = [
     tech: ['Java', 'SQL', 'Swing', 'JSP'],
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/SMS',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Circuit board
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', // Dashboard/data management
   },
   {
     id: 3,
