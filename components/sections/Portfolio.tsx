@@ -13,9 +13,7 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/streaming-platform',
-    gradient: 'bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e]', // Deep Space
-    stats: [],
-    features: [],
+    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80', // Retro tech/gaming
   },
   {
     id: 2,
@@ -25,9 +23,7 @@ const projects = [
     tech: ['Java', 'SQL', 'Swing', 'JSP'],
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/SMS',
-    gradient: 'bg-gradient-to-br from-[#000428] via-[#004e92] to-[#000428]', // Midnight Blue
-    stats: [],
-    features: [],
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80', // Circuit board
   },
   {
     id: 3,
@@ -37,9 +33,7 @@ const projects = [
     tech: ['Python', 'NumPy', 'MATLAB', 'Firebase'],
     color: 'from-primary via-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Consumption-Analysis',
-    gradient: 'bg-gradient-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e]', // Cyber Dark
-    stats: [],
-    features: [],
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80', // Data visualization
   },
   {
     id: 4,
@@ -49,9 +43,7 @@ const projects = [
     tech: ['Python', 'Tkinter', 'SQLite'],
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Personal-Finance-Dashboard',
-    gradient: 'bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]', // Dark Ocean
-    stats: [],
-    features: [],
+    image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=800&q=80', // Dark finance charts
   },
   {
     id: 5,
@@ -61,9 +53,7 @@ const projects = [
     tech: ['Python', 'API'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/Mini-Horoscope-Checker',
-    gradient: 'bg-gradient-to-br from-[#141e30] via-[#243b55] to-[#141e30]', // Night Sky
-    stats: [],
-    features: [],
+    image: 'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80', // Night sky stars
   },
   {
     id: 6,
@@ -73,9 +63,7 @@ const projects = [
     tech: ['Python'],
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Pomodoro',
-    gradient: 'bg-gradient-to-br from-[#1a0a2e] via-[#2d1b4e] to-[#1a0a2e]', // Dark Purple Cosmos
-    stats: [],
-    features: [],
+    image: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=800&q=80', // Clock/time
   },
 ];
 
