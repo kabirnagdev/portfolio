@@ -1,8 +1,8 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import anime from 'animejs';
-import { Github, ExternalLink, Code, Zap, CheckCircle } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 
 interface ProjectStat {
   label: string;
@@ -19,6 +19,7 @@ interface Project {
   github: string | null;
   stats: ProjectStat[];
   features: string[];
+  gradient: string;
 }
 
 interface ProjectCardProps {
@@ -27,43 +28,23 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const statsRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const gradientRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            // Animate stats when visible
-            anime({
-              targets: statsRef.current?.querySelectorAll('.stat-value'),
-              scale: [0.5, 1],
-              opacity: [0, 1],
-              delay: anime.stagger(100),
-              duration: 600,
-              easing: 'easeOutElastic(1, .5)',
-            });
-            anime({
-              targets: statsRef.current?.querySelectorAll('.feature-item'),
-              translateX: [-20, 0],
-              opacity: [0, 1],
-              delay: anime.stagger(80, { start: 300 }),
-              duration: 500,
-              easing: 'easeOutQuad',
-            });
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
+    // Subtle floating animation for gradient orbs
+    if (gradientRef.current) {
+      anime({
+        targets: gradientRef.current.querySelectorAll('.gradient-orb'),
+        translateY: [-10, 10],
+        translateX: [-5, 5],
+        scale: [1, 1.1, 1],
+        duration: 4000,
+        easing: 'easeInOutSine',
+        direction: 'alternate',
+        loop: true,
+        delay: anime.stagger(500),
+      });
     }
-
-    return () => observer.disconnect();
   }, []);
 
   const handleMouseEnter = () => {
@@ -100,49 +81,41 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Project Stats & Features Panel */}
-        <div ref={statsRef} className={`h-64 bg-gradient-to-br ${project.color} relative overflow-hidden p-6`}>
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-4 right-4 w-32 h-32 border border-background/30 rounded-full" />
-            <div className="absolute bottom-4 left-4 w-24 h-24 border border-background/30 rounded-full" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-background/20 rounded-full" />
+        {/* Cosmic/Cyber Gradient Background */}
+        <div ref={gradientRef} className={`h-64 relative overflow-hidden ${project.gradient}`}>
+          {/* Animated gradient orbs */}
+          <div className="gradient-orb absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-primary/30 blur-3xl" />
+          <div className="gradient-orb absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-blue-500/20 blur-3xl" />
+          <div className="gradient-orb absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-violet-500/20 blur-2xl" />
+          
+          {/* Mesh grid overlay */}
+          <div className="absolute inset-0 opacity-20" style={{
+            backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)`,
+            backgroundSize: '40px 40px'
+          }} />
+
+          {/* Starfield effect */}
+          <div className="absolute inset-0">
+            <div className="absolute top-[10%] left-[15%] w-1 h-1 bg-white/60 rounded-full animate-pulse" />
+            <div className="absolute top-[30%] right-[20%] w-1.5 h-1.5 bg-white/40 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
+            <div className="absolute bottom-[25%] left-[30%] w-1 h-1 bg-white/50 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
+            <div className="absolute top-[50%] right-[35%] w-0.5 h-0.5 bg-white/70 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }} />
+            <div className="absolute bottom-[40%] right-[15%] w-1 h-1 bg-white/40 rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
+            <div className="absolute top-[20%] left-[60%] w-0.5 h-0.5 bg-white/60 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }} />
+            <div className="absolute bottom-[15%] left-[45%] w-1 h-1 bg-white/30 rounded-full animate-pulse" style={{ animationDelay: '0.8s' }} />
           </div>
 
-          {/* Stats Grid */}
-          <div className="relative z-10 grid grid-cols-3 gap-3 mb-4">
-            {project.stats.map((stat, index) => (
-              <div 
-                key={index} 
-                className="stat-value bg-background/20 backdrop-blur-sm rounded-lg p-3 text-center border border-background/10"
-              >
-                <div className="text-2xl font-bold text-background font-mono">{stat.value}</div>
-                <div className="text-xs text-background/70 mt-1">{stat.label}</div>
-              </div>
-            ))}
+          {/* Central glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary/10 rounded-full blur-3xl" />
+
+          {/* Project number watermark */}
+          <div className="absolute bottom-4 right-6 text-7xl font-bold text-white/5 font-mono select-none">
+            {String(project.id).padStart(2, '0')}
           </div>
 
-          {/* Features List */}
-          <div className="relative z-10 mt-4">
-            <div className="flex items-center gap-2 mb-2">
-              <Zap className="w-4 h-4 text-background/80" />
-              <span className="text-xs font-semibold text-background/80 uppercase tracking-wider">Key Features</span>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {project.features.map((feature, index) => (
-                <div 
-                  key={index}
-                  className="feature-item flex items-center gap-1.5 bg-background/20 backdrop-blur-sm px-3 py-1.5 rounded-full border border-background/10"
-                >
-                  <CheckCircle className="w-3 h-3 text-background/80" />
-                  <span className="text-xs text-background font-medium">{feature}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Animated pulse effect */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-background/10 rounded-full animate-ping opacity-20" />
+          {/* Subtle border glow on edges */}
+          <div className="absolute inset-0 border border-primary/10 rounded-t-lg" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
         </div>
 
         {/* Project Info */}

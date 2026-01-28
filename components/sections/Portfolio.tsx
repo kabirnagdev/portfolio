@@ -13,12 +13,9 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/streaming-platform',
-    stats: [
-      { label: 'Lines of Code', value: '2.5K+' },
-      { label: 'API Integrations', value: '3' },
-      { label: 'Features', value: '12+' },
-    ],
-    features: ['Dynamic Search', 'Responsive UI', 'Content Filters'],
+    gradient: 'bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e]', // Deep Space
+    stats: [],
+    features: [],
   },
   {
     id: 2,
@@ -28,12 +25,9 @@ const projects = [
     tech: ['Java', 'SQL', 'Swing', 'JSP'],
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/SMS',
-    stats: [
-      { label: 'Lines of Code', value: '3K+' },
-      { label: 'Database Tables', value: '8' },
-      { label: 'Features', value: '15+' },
-    ],
-    features: ['Student Profiles', 'Attendance Tracking', 'Data Export'],
+    gradient: 'bg-gradient-to-br from-[#000428] via-[#004e92] to-[#000428]', // Midnight Blue
+    stats: [],
+    features: [],
   },
   {
     id: 3,
@@ -43,12 +37,9 @@ const projects = [
     tech: ['Python', 'NumPy', 'MATLAB', 'Firebase'],
     color: 'from-primary via-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Consumption-Analysis',
-    stats: [
-      { label: 'Data Points', value: '1K+' },
-      { label: 'Visualizations', value: '6' },
-      { label: 'Accuracy', value: '94%' },
-    ],
-    features: ['AI Analysis', 'Health Insights', 'Data Visualization'],
+    gradient: 'bg-gradient-to-br from-[#0a0a0a] via-[#1a1a2e] to-[#16213e]', // Cyber Dark
+    stats: [],
+    features: [],
   },
   {
     id: 4,
@@ -58,12 +49,9 @@ const projects = [
     tech: ['Python', 'Tkinter', 'SQLite'],
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Personal-Finance-Dashboard',
-    stats: [
-      { label: 'Lines of Code', value: '1.8K+' },
-      { label: 'Charts', value: '5' },
-      { label: 'Features', value: '10+' },
-    ],
-    features: ['Expense Tracking', 'Visual Reports', 'Budget Planning'],
+    gradient: 'bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]', // Dark Ocean
+    stats: [],
+    features: [],
   },
   {
     id: 5,
@@ -73,12 +61,9 @@ const projects = [
     tech: ['Python', 'API'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/Mini-Horoscope-Checker',
-    stats: [
-      { label: 'Zodiac Signs', value: '12' },
-      { label: 'API Calls', value: '1' },
-      { label: 'Daily Updates', value: '∞' },
-    ],
-    features: ['Daily Horoscope', 'All Zodiacs', 'Clean UI'],
+    gradient: 'bg-gradient-to-br from-[#141e30] via-[#243b55] to-[#141e30]', // Night Sky
+    stats: [],
+    features: [],
   },
   {
     id: 6,
@@ -88,12 +73,9 @@ const projects = [
     tech: ['Python'],
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Pomodoro',
-    stats: [
-      { label: 'Focus Sessions', value: '25m' },
-      { label: 'Break Time', value: '5m' },
-      { label: 'Cycles', value: '4' },
-    ],
-    features: ['Timer Controls', 'Session Tracking', 'Notifications'],
+    gradient: 'bg-gradient-to-br from-[#1a0a2e] via-[#2d1b4e] to-[#1a0a2e]', // Dark Purple Cosmos
+    stats: [],
+    features: [],
   },
 ];
 
