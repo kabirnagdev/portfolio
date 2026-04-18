@@ -201,6 +201,23 @@ const technicalSkills = [
       { name: 'Servlets', description: 'Java web components' },
     ],
   },
+  category: 'Artificial Intelligence',
+icon: Brain,
+technologies: [
+  { name: 'Python', description: 'Core language for AI/ML development' },
+  { name: 'NumPy', description: 'Numerical computing and array operations' },
+  { name: 'Pandas', description: 'Data manipulation and analysis' },
+  { name: 'Matplotlib / Seaborn', description: 'Data visualization' },
+  { name: 'Scikit-learn', description: 'Machine learning algorithms and evaluation' },
+  { name: 'TensorFlow / Keras', description: 'Building and training neural networks' },
+  { name: 'ANN', description: 'Artificial Neural Network fundamentals' },
+  { name: 'CNN', description: 'Convolutional Neural Networks for image data' },
+  { name: 'Encoders', description: 'Basic encoder architectures in neural networks' },
+  { name: 'NLP', description: 'Text preprocessing and basic natural language tasks' },
+  { name: 'Data Preprocessing', description: 'Cleaning, normalization, encoding' },
+  { name: 'Model Evaluation', description: 'Accuracy, confusion matrix, validation' },
+  { name: 'Jupyter / Colab', description: 'Experimentation and model development environment' },
+]
   {
     category: 'App Development',
     icon: Smartphone,
