@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import anime from 'animejs';
 import { 
+  Brain,
   Globe, 
   Smartphone, 
   Database, 
