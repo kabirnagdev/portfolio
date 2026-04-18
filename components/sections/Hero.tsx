@@ -71,7 +71,7 @@ export default function Hero() {
             </div>
             <div className="stat-item border-l-2 border-primary pl-4 opacity-0">
               <div className="text-2xl font-bold text-primary">
-                <AnimatedCounter value={5} />+
+                <AnimatedCounter value={10} />+
               </div>
               <div className="text-xs text-muted-foreground">Projects Built</div>
             </div>
