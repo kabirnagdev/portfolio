@@ -13,7 +13,7 @@ const projects = [
     tech: ['Python','PyTorch' ,'MobileNetV2' ,' CLAHE', 'NIfTI'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
-    image: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12610332/', // Retro tech/gaming
+    image: 'https://images.unsplash.com/photo-1649073586428-e288125d930a?w=800&q=80', // Retro tech/gaming
   },
   {
     id: 7,
