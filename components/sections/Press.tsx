@@ -361,8 +361,19 @@ const CategoryCard = ({ category, isCreative = false }: { category: typeof techn
 };
 
 const experiences = [
-  {
+    {
     id: 1,
+    role: 'Founder & CEO',
+    company: 'Yanegi',
+    period: 'February 2026 - Present',
+    description: 'Leading development and key decision-making for the Company.',
+    achievements: [
+  'Developed and deployed Yanegi app',
+  'Handled end-to-end product lifecycle',
+  'Built and managed testing pipeline'],
+  },
+  {
+    id: 2,
     role: 'Junior Associate',
     company: 'Weber Innovations',
     period: 'August 2025 - Present',
@@ -370,20 +381,12 @@ const experiences = [
     achievements: ['Visual Design', 'Campaign Strategy', 'Brand Management'],
   },
   {
-    id: 2,
+    id: 3,
     role: 'Advertisement Head',
     company: 'MUNify',
     period: 'July 2024 - Nov 2024',
     description: 'Led social media campaigns and digital marketing strategies for Model UN startup.',
     achievements: ['Social Media Strategy', 'Ad Creative Design', 'Engagement Growth'],
-  },
-  {
-    id: 3,
-    role: 'Freelance Frontend Developer',
-    company: 'Self-employed',
-    period: 'December 2024 - Present',
-    description: 'Designed and developed responsive websites with clean UI and mobile-first approach.',
-    achievements: ['Web Development', 'Client Management', 'Responsive Design'],
   },
 ];
 
