@@ -15,25 +15,16 @@ const projects = [
     github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
     image: 'https://images.unsplash.com/photo-1649073586428-e288125d930a?w=800&q=80', // Retro tech/gaming
   },
-  {
-    id: 7,
-    title: 'WatChill',
-    subtitle: 'Movies & Anime Streaming Platform',
-    description: 'Responsive web platform with dynamic content loading, search filters, and intuitive UI.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
-    color: 'from-primary to-secondary',
-    github: 'https://github.com/kabirnagdev/streaming-platform',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80', // Retro tech/gaming
-  },
+
   {
     id: 2,
-    title: 'SMS',
-    subtitle: 'Student Management System',
-    description: 'GUI-based system for managing student records with profiles, attendance, and performance tracking.',
-    tech: ['Java', 'SQL', 'Swing', 'JSP'],
+    title: 'Team Canvas',
+    subtitle: 'Collaborative Infinite Whiteboard Platform',
+    description: 'a premium, unified workspace that merges the freedom of an infinite canvas with the speed of real-time collaboration.',
+    tech: ['Prisma ORM', 'Docker', 'Zustand', 'Axios','Socket.io','PostgreSQL', 'Socket.io' , ' React 18' , 'Node.js' ],
     color: 'from-secondary to-primary',
-    github: 'https://github.com/kabirnagdev/SMS',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', // Dashboard/data management
+    github: 'https://github.com/kabirnagdev/TeamCanvas.git',
+    image: 'https://i.pinimg.com/1200x/79/8d/6c/798d6cc030e2e07825773bdd08b8f4b6.jpg', // Dashboard/data management
   },
   {
     id: 3,
@@ -44,6 +35,16 @@ const projects = [
     color: 'from-primary via-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Consumption-Analysis',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80', // Data visualization
+  },
+      {
+    id: 2,
+    title: 'SMS',
+    subtitle: 'Student Management System',
+    description: 'GUI-based system for managing student records with profiles, attendance, and performance tracking.',
+    tech: ['Java', 'SQL', 'Swing', 'JSP'],
+    color: 'from-secondary to-primary',
+    github: 'https://github.com/kabirnagdev/SMS',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', // Dashboard/data management
   },
   {
     id: 4,
@@ -74,6 +75,16 @@ const projects = [
     color: 'from-secondary to-primary',
     github: 'https://github.com/kabirnagdev/Pomodoro',
     image: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=800&q=80', // Clock/time
+  },
+      {
+    id: 7,
+    title: 'WatChill',
+    subtitle: 'Movies & Anime Streaming Platform',
+    description: 'Responsive web platform with dynamic content loading, search filters, and intuitive UI.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
+    color: 'from-primary to-secondary',
+    github: 'https://github.com/kabirnagdev/streaming-platform',
+    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80', // Retro tech/gaming
   },
 ];
 
