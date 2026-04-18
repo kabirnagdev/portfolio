@@ -200,7 +200,7 @@ const technicalSkills = [
       { name: 'JSP', description: 'Java Server Pages' },
       { name: 'Servlets', description: 'Java web components' },
     ],
-  },
+  },{
   category: 'Artificial Intelligence',
 icon: Brain,
 technologies: [
@@ -217,7 +217,8 @@ technologies: [
   { name: 'Data Preprocessing', description: 'Cleaning, normalization, encoding' },
   { name: 'Model Evaluation', description: 'Accuracy, confusion matrix, validation' },
   { name: 'Jupyter / Colab', description: 'Experimentation and model development environment' },
-]
+] 
+  },
   {
     category: 'App Development',
     icon: Smartphone,
