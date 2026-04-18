@@ -106,6 +106,15 @@ const certifications = [
     Icon: Trophy,
     category: 'achievement',
   },
+    {
+    id: 12,
+    title: 'IEEE Innovation Expo'26',
+    issuer: 'WIE Club',
+    issuedDate: 'April 2026',
+    description: 'Pitch our social app idea in front of judges from American Express and Samsung and got special mention.',
+    Icon: Trophy,
+    category: 'achievement',
+  },
 ];
 
 const categories = [
