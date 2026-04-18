@@ -5,8 +5,18 @@ import anime from 'animejs';
 import ProjectCard from '@/components/ProjectCard';
 
 const projects = [
-  {
+    {
     id: 1,
+    title: 'HCC Diagnosis',
+    subtitle: 'By CNN 2D Slicing MobileNet-V2 ',
+    description: 'A computationally efficient framework utilising the MobileNet-V2 architecture for slice-level HCC classification.',
+    tech: ['Python','PyTorch' ,'MobileNetV2' ,' CLAHE', 'NIfTI'],
+    color: 'from-primary to-secondary',
+    github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
+    image: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12610332/', // Retro tech/gaming
+  },
+  {
+    id: 7,
     title: 'WatChill',
     subtitle: 'Movies & Anime Streaming Platform',
     description: 'Responsive web platform with dynamic content loading, search filters, and intuitive UI.',
