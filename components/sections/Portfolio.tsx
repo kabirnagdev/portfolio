@@ -13,7 +13,7 @@ const projects = [
     tech: ['Flutter','Firebase' ,'Node.js' ,'Mapbox'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
-    image: 'https://play-lh.googleusercontent.com/tN4UQFm_EIr9ejLOqPTtLPUB39HOxdQRGQXwWLyJilEo7575NsQ59A5Sw0bT31j1F12OhxDjGvkKH-nlGOxQUA=w416-h235-rw', // Retro tech/gaming
+    image: 'https://media.licdn.com/dms/image/v2/D5622AQHNTU8q2OwyCg/feedshare-shrink_1280/B56Z195arHHAAM-/0/1775933697149?e=1779926400&v=beta&t=fg0KYBFcMwnmaXkP-2gIwUiFfVFzqTdrZE9fkz_wBLY', // Retro tech/gaming
   },
     {
     id: 1,
