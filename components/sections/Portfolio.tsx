@@ -5,6 +5,16 @@ import anime from 'animejs';
 import ProjectCard from '@/components/ProjectCard';
 
 const projects = [
+     {
+    id: 1,
+    title: 'Your Neighbourhood ',
+    subtitle: 'A Local Social Discovery Mobile App',
+    description: 'Create hangouts as easy as posting on social media. No event planner complexity',
+    tech: ['Flutter','Firebase' ,'Node.js' ,'Mapbox'],
+    color: 'from-primary to-secondary',
+    github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
+    image: 'https://play-lh.googleusercontent.com/tN4UQFm_EIr9ejLOqPTtLPUB39HOxdQRGQXwWLyJilEo7575NsQ59A5Sw0bT31j1F12OhxDjGvkKH-nlGOxQUA=w416-h235-rw', // Retro tech/gaming
+  },
     {
     id: 1,
     title: 'HCC Diagnosis',
