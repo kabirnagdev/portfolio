@@ -12,7 +12,13 @@ const projects = [
     description: 'Create hangouts as easy as posting on social media. No event planner complexity',
     tech: ['Flutter','Firebase' ,'Node.js' ,'Mapbox'],
     color: 'from-primary to-secondary',
-    github: 'https://play.google.com/store/apps/details?id=com.yanegi.app',
+    links: [
+      {
+        label: 'View Online',
+        url: 'https://play.google.com/store/apps/details?id=com.yanegi.app',
+        type: 'external',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1592626480256-96462f728137?q=80&w=800', // Bustling city road for neighborhood app
   },
     {
@@ -22,7 +28,13 @@ const projects = [
     description: 'A computationally efficient framework utilising the MobileNet-V2 architecture for slice-level HCC classification.',
     tech: ['Python','PyTorch' ,'MobileNetV2' ,' CLAHE', 'NIfTI'],
     color: 'from-primary to-secondary',
-    github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
+        type: 'github',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1649073586428-e288125d930a?w=800&q=80', // Retro tech/gaming
   },
 
@@ -33,7 +45,13 @@ const projects = [
     description: 'a premium, unified workspace that merges the freedom of an infinite canvas with the speed of real-time collaboration.',
     tech: ['Prisma ORM', 'Docker', 'Zustand', 'Axios','Socket.io','PostgreSQL', 'Socket.io' , ' React 18' , 'Node.js' ],
     color: 'from-secondary to-primary',
-    github: 'https://github.com/kabirnagdev/TeamCanvas.git',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/TeamCanvas.git',
+        type: 'github',
+      },
+    ],
     image: 'https://i.pinimg.com/1200x/79/8d/6c/798d6cc030e2e07825773bdd08b8f4b6.jpg', // Dashboard/data management
   },
   {
@@ -43,7 +61,13 @@ const projects = [
     description: 'AI system analyzing nutritional data with visualization and health insights.',
     tech: ['Python', 'NumPy', 'MATLAB', 'Firebase'],
     color: 'from-primary via-secondary to-primary',
-    github: 'https://github.com/kabirnagdev/Consumption-Analysis',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/Consumption-Analysis',
+        type: 'github',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80', // Data visualization
   },
       {
@@ -53,7 +77,13 @@ const projects = [
     description: 'GUI-based system for managing student records with profiles, attendance, and performance tracking.',
     tech: ['Java', 'SQL', 'Swing', 'JSP'],
     color: 'from-secondary to-primary',
-    github: 'https://github.com/kabirnagdev/SMS',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/SMS',
+        type: 'github',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', // Dashboard/data management
   },
   {
@@ -63,7 +93,13 @@ const projects = [
     description: 'Desktop application for tracking personal finances with intuitive UI and data visualization.',
     tech: ['Python', 'Tkinter', 'SQLite'],
     color: 'from-secondary to-primary',
-    github: 'https://github.com/kabirnagdev/Personal-Finance-Dashboard',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/Personal-Finance-Dashboard',
+        type: 'github',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=800&q=80', // Dark finance charts
   },
   {
@@ -73,7 +109,13 @@ const projects = [
     description: 'Fun mini project to check your daily horoscope based on zodiac signs.',
     tech: ['Python', 'API'],
     color: 'from-primary to-secondary',
-    github: 'https://github.com/kabirnagdev/Mini-Horoscope-Checker',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/Mini-Horoscope-Checker',
+        type: 'github',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80', // Night sky stars
   },
   {
@@ -83,7 +125,13 @@ const projects = [
     description: 'Time management application using the Pomodoro Technique for better focus and productivity.',
     tech: ['Python'],
     color: 'from-secondary to-primary',
-    github: 'https://github.com/kabirnagdev/Pomodoro',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/Pomodoro',
+        type: 'github',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=800&q=80', // Clock/time
   },
       {
@@ -93,7 +141,13 @@ const projects = [
     description: 'Responsive web platform with dynamic content loading, search filters, and intuitive UI.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
     color: 'from-primary to-secondary',
-    github: 'https://github.com/kabirnagdev/streaming-platform',
+    links: [
+      {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/streaming-platform',
+        type: 'github',
+      },
+    ],
     image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80', // Retro tech/gaming
   },
 ];
