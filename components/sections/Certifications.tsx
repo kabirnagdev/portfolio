@@ -146,7 +146,7 @@ const certifications = [
     title: 'HiveMinds: Strategy Conquest S1 - National Finalist',
     issuer: 'PrepBee',
     issuedDate: '2025',
-    description: 'Emerged as National Finalist representing Bennett University as Team AlphaQ in the Strategy Conquest competition.',
+    description: 'Emerged as National Finalist as Team AlphaQ in the Strategy Conquest competition.',
     Icon: Trophy,
     category: 'achievement',
   },
@@ -311,11 +311,11 @@ export default function Certifications() {
         {/* Stats Summary */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="glass-card-hover p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-1">11+</div>
+            <div className="text-3xl font-bold text-primary mb-1">17+</div>
             <p className="text-sm text-muted-foreground">Certifications</p>
           </div>
           <div className="glass-card-hover p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-1">5+</div>
+            <div className="text-3xl font-bold text-primary mb-1">9+</div>
             <p className="text-sm text-muted-foreground">Platforms</p>
           </div>
           <div className="glass-card-hover p-6 text-center">
