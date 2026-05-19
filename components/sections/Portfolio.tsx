@@ -13,10 +13,10 @@ const projects = [
     tech: ['Flutter','Firebase' ,'Node.js' ,'Mapbox'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
-    image: 'https://media.licdn.com/dms/image/v2/D5622AQHNTU8q2OwyCg/feedshare-shrink_1280/B56Z195arHHAAM-/0/1775933697149?e=1779926400&v=beta&t=fg0KYBFcMwnmaXkP-2gIwUiFfVFzqTdrZE9fkz_wBLY', // Retro tech/gaming
+    image: 'https://images.unsplash.com/photo-1465447142348-e9952c393450?w=800&q=80', // Bustling city road for neighborhood app
   },
     {
-    id: 1,
+    id: 2,
     title: 'HCC Diagnosis',
     subtitle: 'By CNN 2D Slicing MobileNet-V2 ',
     description: 'A computationally efficient framework utilising the MobileNet-V2 architecture for slice-level HCC classification.',
@@ -27,7 +27,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: 'Team Canvas',
     subtitle: 'Collaborative Infinite Whiteboard Platform',
     description: 'a premium, unified workspace that merges the freedom of an infinite canvas with the speed of real-time collaboration.',
@@ -37,7 +37,7 @@ const projects = [
     image: 'https://i.pinimg.com/1200x/79/8d/6c/798d6cc030e2e07825773bdd08b8f4b6.jpg', // Dashboard/data management
   },
   {
-    id: 3,
+    id: 4,
     title: 'Calorie & Nutrition AI',
     subtitle: 'AI-Powered Health Analysis',
     description: 'AI system analyzing nutritional data with visualization and health insights.',
@@ -47,7 +47,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80', // Data visualization
   },
       {
-    id: 4,
+    id: 5,
     title: 'SMS',
     subtitle: 'Student Management System',
     description: 'GUI-based system for managing student records with profiles, attendance, and performance tracking.',
@@ -57,7 +57,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', // Dashboard/data management
   },
   {
-    id: 5,
+    id: 6,
     title: 'Personal Finance Dashboard',
     subtitle: 'Financial Management Tool',
     description: 'Desktop application for tracking personal finances with intuitive UI and data visualization.',
@@ -67,7 +67,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=800&q=80', // Dark finance charts
   },
   {
-    id: 6,
+    id: 7,
     title: 'Horoscope Checker',
     subtitle: 'Daily Horoscope App',
     description: 'Fun mini project to check your daily horoscope based on zodiac signs.',
@@ -77,7 +77,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80', // Night sky stars
   },
   {
-    id: 7,
+    id: 8,
     title: 'Pomodoro Timer',
     subtitle: 'Productivity Tool',
     description: 'Time management application using the Pomodoro Technique for better focus and productivity.',
@@ -87,7 +87,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=800&q=80', // Clock/time
   },
       {
-    id: 8,
+    id: 9,
     title: 'WatChill',
     subtitle: 'Movies & Anime Streaming Platform',
     description: 'Responsive web platform with dynamic content loading, search filters, and intuitive UI.',
