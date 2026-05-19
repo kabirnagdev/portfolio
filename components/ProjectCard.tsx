@@ -131,7 +131,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   >
                     <LinkIcon className="w-5 h-5" />
                     {link.label}
-                    <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                 );
               })}
