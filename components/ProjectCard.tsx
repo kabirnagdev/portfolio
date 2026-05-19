@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import anime from 'animejs';
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink, Github, Link as LinkIcon } from 'lucide-react';
 
 interface ProjectLink {
   label: string;
@@ -119,7 +119,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <div className="flex flex-col gap-3 sm:flex-row">
               {links.map((link) => {
                 const isGithub = link.type === 'github';
-                const LinkIcon = isGithub ? Github : ExternalLink;
+                const Icon = isGithub ? Github : LinkIcon;
 
                 return (
                   <a
@@ -129,8 +129,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     rel="noopener noreferrer"
                     className="w-full flex-1 px-4 py-3 bg-primary/20 border border-primary/30 text-primary hover:bg-primary/40 transition-all duration-300 font-semibold rounded hover:scale-105 transform flex items-center justify-center gap-2 group"
                   >
-                    <LinkIcon className="w-5 h-5 transition-transform group-hover:scale-110" />
+                    <Icon className="w-5 h-5" />
                     {link.label}
+                    {!isGithub ? (
+                      <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    ) : null}
                   </a>
                 );
               })}
