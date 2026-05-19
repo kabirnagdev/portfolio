@@ -43,6 +43,15 @@ const certifications = [
     Icon: Bot,
     category: 'ai',
   },
+    {
+    id: 1,
+    title: 'The Bits and Bytes of Computer Networking',
+    issuer: 'Google',
+    issuedDate: 'Mar 2026',
+    description: 'Covered from the fundamentals of modern networking technologies and protocols to an overview of the cloud to practical applications and network troubleshooting',
+    Icon: Cloud,
+    category: 'cloud',
+  },
   {
     id: 5,
     title: 'GenAI Buildathon - Generative AI Mastery Workshop',
