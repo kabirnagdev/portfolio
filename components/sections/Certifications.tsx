@@ -168,6 +168,7 @@ const categories = [
   { id: 'programming', name: 'Programming' },
   { id: 'achievement', name: 'Achievements' },
   { id: 'business', name: 'Business' },
+   { id: 'experience', name: 'Experience' },
 ];
 
 export default function Certifications() {
