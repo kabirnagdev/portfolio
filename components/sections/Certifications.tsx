@@ -35,7 +35,7 @@ const certifications = [
     category: 'cloud',
   },
      {
-    id: 1,
+    id: 4,
     title: 'Design Thinking: Insights to Inspiration ',
     issuer: 'University of Virginia',
     issuedDate: 'Mar 2026',
@@ -44,7 +44,7 @@ const certifications = [
     category: 'experience',
   },
   {
-    id: 4,
+    id: 5,
     title: 'AWS Educate Machine Learning Foundations',
     issuer: 'Amazon Web Services',
     issuedDate: 'Jul 2025',
@@ -53,7 +53,7 @@ const certifications = [
     category: 'ai',
   },
     {
-    id: 1,
+    id: 6,
     title: 'The Bits and Bytes of Computer Networking',
     issuer: 'Google',
     issuedDate: 'Mar 2026',
@@ -62,7 +62,7 @@ const certifications = [
     category: 'programming',
   },
   {
-    id: 5,
+    id: 7,
     title: 'GenAI Buildathon - Generative AI Mastery Workshop',
     issuer: 'NxtWave (OpenAI Academy)',
     issuedDate: 'Aug 2025',
@@ -70,7 +70,7 @@ const certifications = [
     Icon: Sparkles,
     category: 'ai',
   },   {
-    id: 1,
+    id: 8,
     title: 'Operating Systems Fundamentals',
     issuer: 'Akamai Technologies',
     issuedDate: 'Mar 2026',
@@ -79,7 +79,7 @@ const certifications = [
     category: 'programming',
   },
     {
-    id: 1,
+    id: 9,
     title: 'Introduction to Tech Entrepreneurship',
     issuer: 'IIT Bombay',
     issuedDate: 'Mar 2026',
@@ -88,7 +88,7 @@ const certifications = [
     category: 'business',
   },
   {
-    id: 6,
+    id: 10,
     title: 'LeetCode 100 Days Badge 2025',
     issuer: 'LeetCode',
     issuedDate: '2025',
@@ -97,7 +97,7 @@ const certifications = [
     category: 'achievement',
   },
   {
-    id: 7,
+    id: 11,
     title: 'Entrepreneurship Strategy: From Ideation to Exit',
     issuer: 'HEC Paris (Coursera)',
     issuedDate: 'Dec 2024',
@@ -106,7 +106,7 @@ const certifications = [
     category: 'business',
   },
   {
-    id: 8,
+    id: 12,
     title: 'Introduction to Python',
     issuer: 'Infosys Springboard',
     issuedDate: 'Sep 2024',
@@ -115,7 +115,7 @@ const certifications = [
     category: 'programming',
   },
      {
-    id: 1,
+    id: 13,
     title: 'Introduction to Microprocessors',
     issuer: 'Arm',
     issuedDate: 'Mar 2026',
@@ -124,7 +124,7 @@ const certifications = [
     category: 'programming',
   },
   {
-    id: 9,
+    id: 14,
     title: 'Core Java Programming Revisited',
     issuer: 'Infosys Springboard',
     issuedDate: 'Mar 2025',
@@ -133,7 +133,7 @@ const certifications = [
     category: 'programming',
   },
   {
-    id: 10,
+    id: 15,
     title: 'Technology Job Simulation',
     issuer: 'Deloitte (Forage)',
     issuedDate: 'Jun 2025',
@@ -142,7 +142,7 @@ const certifications = [
     category: 'experience',
   },
   {
-    id: 11,
+    id: 16,
     title: 'HiveMinds: Strategy Conquest S1 - National Finalist',
     issuer: 'PrepBee',
     issuedDate: '2025',
@@ -151,7 +151,7 @@ const certifications = [
     category: 'achievement',
   },
     {
-    id: 12,
+    id: 17,
     title: 'IEEE Innovation Expo 2026',
     issuer: 'WIE Club',
     issuedDate: 'April 2026',
