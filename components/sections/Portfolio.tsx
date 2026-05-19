@@ -13,7 +13,7 @@ const projects = [
     tech: ['Flutter','Firebase' ,'Node.js' ,'Mapbox'],
     color: 'from-primary to-secondary',
     github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
-    image: 'https://images.unsplash.com/photo-1465447142348-e9952c393450?w=800&q=80', // Bustling city road
+    image: 'https://images.unsplash.com/photo-1465447142348-e9952c393450?w=800&q=80', // Bustling city road for neighborhood app
   },
     {
     id: 2,
