@@ -12,8 +12,8 @@ const projects = [
     description: 'Create hangouts as easy as posting on social media. No event planner complexity',
     tech: ['Flutter','Firebase' ,'Node.js' ,'Mapbox'],
     color: 'from-primary to-secondary',
-    github: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
-    image: 'https://images.unsplash.com/photo-1465447142348-e9952c393450?w=800&q=80', // Bustling city road for neighborhood app
+    github: 'https://play.google.com/store/apps/details?id=com.yanegi.app',
+    image: 'https://images.unsplash.com/photo-1592626480256-96462f728137?q=80&w=800', // Bustling city road for neighborhood app
   },
     {
     id: 2,
