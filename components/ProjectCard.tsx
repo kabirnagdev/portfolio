@@ -129,7 +129,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     rel="noopener noreferrer"
                     className="w-full flex-1 px-4 py-3 bg-primary/20 border border-primary/30 text-primary hover:bg-primary/40 transition-all duration-300 font-semibold rounded hover:scale-105 transform flex items-center justify-center gap-2 group"
                   >
-                    <LinkIcon className="w-5 h-5" />
+                    <LinkIcon className="w-5 h-5 transition-transform group-hover:scale-110" />
                     {link.label}
                   </a>
                 );
