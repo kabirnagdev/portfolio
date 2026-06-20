@@ -80,7 +80,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div ref={buttonsRef} className="flex gap-4">
             <a 
-              href="/Resume.pdf" 
+              href="/resume.pdf" 
               download 
               className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 font-semibold rounded opacity-0 hover:scale-105 transform"
             >
