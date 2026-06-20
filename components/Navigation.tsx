@@ -92,7 +92,7 @@ export default function Navigation() {
 
         {/* CTA Button */}
         <a
-          href="/Resume.pdf"
+          href="/resume.pdf"
           download
           className="px-6 py-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 text-sm rounded hover:scale-105 transform"
         >
