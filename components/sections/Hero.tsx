@@ -65,7 +65,7 @@ export default function Hero() {
           <div ref={statsRef} className="flex gap-8 mb-12">
             <div className="stat-item border-l-2 border-primary pl-4 opacity-0">
               <div className="text-2xl font-bold text-primary">
-                <AnimatedCounter value={102} />
+                <AnimatedCounter value={115} />
               </div>
               <div className="text-xs text-muted-foreground">LeetCode Problems</div>
             </div>
