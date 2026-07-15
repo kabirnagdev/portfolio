@@ -4,7 +4,9 @@ import { useState, useEffect, useRef } from 'react';
 import anime from 'animejs';
 import ProjectCard from '@/components/ProjectCard';
 
-const projects = [
+type Project = Parameters<typeof ProjectCard>[0]['project'];
+
+const projects: Project[] = [
      {
     id: 1,
     title: 'Your Neighbourhood ',
