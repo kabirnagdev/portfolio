@@ -450,7 +450,12 @@ const experiences = [
     id: 2,
     role: 'Senior Associate',
     company: 'Velcoris Industries',
-    period: 'June 2026 - Present',
+    period: 'August 2025 - June 2026',
+    description: 'Leading and executing visual assets for digital campaigns with marketing collaboration.',
+    achievements: ['Leadership', 'Campaign Strategy', 'Brand Management'],
+  },
+  {
+    id: 3,
     role: 'Junior Associate',
     company: 'Velcoris Industries',
     period: 'August 2025 - June 2026',
@@ -458,7 +463,7 @@ const experiences = [
     achievements: ['Visual Design', 'Campaign Strategy', 'Brand Management'],
   },
   {
-    id: 3,
+    id: 4,
     role: 'Advertisement Head',
     company: 'MUNify',
     period: 'July 2024 - Nov 2024',
