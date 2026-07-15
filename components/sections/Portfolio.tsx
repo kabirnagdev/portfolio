@@ -70,86 +70,14 @@ const projects = [
     ],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80', // Data visualization
   },
-      {
-    id: 5,
-    title: 'SMS',
-    subtitle: 'Student Management System',
-    description: 'GUI-based system for managing student records with profiles, attendance, and performance tracking.',
-    tech: ['Java', 'SQL', 'Swing', 'JSP'],
-    color: 'from-secondary to-primary',
-    links: [
-      {
-        label: 'View on GitHub',
-        url: 'https://github.com/kabirnagdev/SMS',
-        type: 'github',
+     ithub',
       },
     ],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', // Dashboard/data management
   },
-  {
-    id: 6,
-    title: 'Personal Finance Dashboard',
-    subtitle: 'Financial Management Tool',
-    description: 'Desktop application for tracking personal finances with intuitive UI and data visualization.',
-    tech: ['Python', 'Tkinter', 'SQLite'],
-    color: 'from-secondary to-primary',
-    links: [
-      {
-        label: 'View on GitHub',
-        url: 'https://github.com/kabirnagdev/Personal-Finance-Dashboard',
-        type: 'github',
-      },
-    ],
-    image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=800&q=80', // Dark finance charts
-  },
-  {
-    id: 7,
-    title: 'Horoscope Checker',
-    subtitle: 'Daily Horoscope App',
-    description: 'Fun mini project to check your daily horoscope based on zodiac signs.',
-    tech: ['Python', 'API'],
-    color: 'from-primary to-secondary',
-    links: [
-      {
-        label: 'View on GitHub',
-        url: 'https://github.com/kabirnagdev/Mini-Horoscope-Checker',
-        type: 'github',
-      },
-    ],
-    image: 'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80', // Night sky stars
-  },
-  {
-    id: 8,
-    title: 'Pomodoro Timer',
-    subtitle: 'Productivity Tool',
-    description: 'Time management application using the Pomodoro Technique for better focus and productivity.',
-    tech: ['Python'],
-    color: 'from-secondary to-primary',
-    links: [
-      {
-        label: 'View on GitHub',
-        url: 'https://github.com/kabirnagdev/Pomodoro',
-        type: 'github',
-      },
-    ],
-    image: 'https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=800&q=80', // Clock/time
-  },
-      {
-    id: 9,
-    title: 'WatChill',
-    subtitle: 'Movies & Anime Streaming Platform',
-    description: 'Responsive web platform with dynamic content loading, search filters, and intuitive UI.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
-    color: 'from-primary to-secondary',
-    links: [
-      {
-        label: 'View on GitHub',
-        url: 'https://github.com/kabirnagdev/streaming-platform',
-        type: 'github',
-      },
-    ],
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80', // Retro tech/gaming
-  },
+
+
+   
 ];
 
 export default function Portfolio() {
