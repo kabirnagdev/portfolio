@@ -34,6 +34,11 @@ const projects = [
         url: 'https://github.com/kabirnagdev/HCC-Diagnosis-Deep-Segmentation-MobileNet-V2-classification.git',
         type: 'github',
       },
+               {
+        label: 'View Online',
+        url: 'https://hcc-diagnosis-deep-segmentation-mobilenet-v2-kabir.streamlit.app/',
+        type: 'external',
+      },
     ],
     image: 'https://images.unsplash.com/photo-1649073586428-e288125d930a?w=800&q=80', // Retro tech/gaming
   },
