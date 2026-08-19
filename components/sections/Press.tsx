@@ -435,9 +435,20 @@ const CategoryCard = ({ category, isCreative = false }: { category: typeof techn
 };
 
 const experiences = [
-    {
+      {
     id: 1,
-    role: 'Founder & CEO',
+    role: 'AI Intern',
+    company: 'Bee-Skilled',
+    period: 'February 2026 - Present',
+    description: 'Development of AI models and Learning about LLM API Calls',
+    achievements: [
+  'NLP projects',
+  'Hands-on Learning',
+  'Testing Edge Cases '],
+  },
+    {
+    id: 2,
+    role: 'Co-Founder and Founding Engineer',
     company: 'Yanegi',
     period: 'February 2026 - Present',
     description: 'Leading development and key decision-making for the Company.',
@@ -447,7 +458,7 @@ const experiences = [
   'Built and managed testing pipeline'],
   },
   {
-    id: 2,
+    id: 3,
     role: 'Senior Associate',
     company: 'Velcoris Industries',
     period: 'August 2025 - June 2026',
@@ -455,7 +466,7 @@ const experiences = [
     achievements: ['Leadership', 'Campaign Strategy', 'Brand Management'],
   },
   {
-    id: 3,
+    id: 4,
     role: 'Junior Associate',
     company: 'Velcoris Industries',
     period: 'August 2025 - June 2026',
@@ -463,8 +474,8 @@ const experiences = [
     achievements: ['Visual Design', 'Campaign Strategy', 'Brand Management'],
   },
   {
-    id: 4,
-    role: 'Advertisement Head',
+    id: 5,
+    role: 'Marketing Associate',
     company: 'MUNify',
     period: 'July 2024 - Nov 2024',
     description: 'Led social media campaigns and digital marketing strategies for Model UN startup.',
