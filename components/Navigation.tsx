@@ -9,7 +9,7 @@ export default function Navigation() {
     { id: 'home', label: 'Home', href: '#home' },
     { id: 'portfolio', label: 'Portfolio', href: '#portfolio' },
     { id: 'press', label: 'Skills', href: '#press' },
-    { id: 'experience', label: 'Experience', href: '#experience' },
+    { id: 'experience', label: 'Experience', href: '#press' },
     { id: 'leetcode', label: 'LeetCode', href: '#leetcode' },
     { id: 'education', label: 'Education', href: '#education' },
     { id: 'certifications', label: 'Certifications', href: '#certifications' },
