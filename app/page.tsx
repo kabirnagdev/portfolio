@@ -6,20 +6,18 @@ import Hero from '@/components/sections/Hero';
 import Portfolio from '@/components/sections/Portfolio';
 import Connect from '@/components/sections/Connect';
 import Press from '@/components/sections/Press';
+import Experience from '@/components/sections/Experience';
 import LeetCodeStats from '@/components/sections/LeetCodeStats';
 import Certifications from '@/components/sections/Certifications';
+import HighlightsCertifications from '@/components/sections/HighlightsCertifications';
 import Education from '@/components/sections/Education';
 import Navigation from '@/components/Navigation';
 import FloatingElements from '@/components/FloatingElements';
 
-// Dynamically import 3D background to avoid SSR issues
-const Background3D = dynamic(() => import('@/components/Background3D'), {
-  ssr: false,
-});
+const Background3D = dynamic(() => import('@/components/Background3D'), { ssr: false });
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
@@ -31,34 +29,16 @@ export default function Home() {
       <Background3D />
       <FloatingElements scrollY={scrollY} />
       <Navigation />
-
-      {/* Hero Section */}
       <Hero />
-
-      {/* Portfolio Section */}
       <Portfolio />
-
-      {/* Press Section */}
       <Press />
-
-      {/* LeetCode Stats Section */}
+      <Experience />
       <LeetCodeStats />
-
-      {/* Education Section */}
       <Education />
-
-      {/* Certifications Section */}
+      <HighlightsCertifications />
       <Certifications />
-
-      {/* Connect Section - at the bottom */}
       <Connect />
-
-      {/* Footer */}
-      <footer className="relative z-10 border-t border-border py-8 px-4 text-center text-muted-foreground">
-        <p className="text-sm">
-          &lt;/&gt; Crafted with code and creativity • 2026
-        </p>
-      </footer>
+      <footer className="relative z-10 border-t border-border py-8 px-4 text-center text-muted-foreground"><p className="text-sm">&lt;/&gt; Crafted with code and creativity • 2026</p></footer>
     </div>
   );
 }
