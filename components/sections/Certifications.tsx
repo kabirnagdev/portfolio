@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import anime from 'animejs';
-import { Cloud, Bot, Sparkles, Briefcase, Rocket, Trophy, Code, X } from 'lucide-react';
+import { Cloud, Bot, Sparkles, Briefcase, Rocket, Trophy, Code, X, ExternalLink } from 'lucide-react';
 
 // Certificate data with all your certifications
 const certifications = [
@@ -254,7 +254,6 @@ export default function Certifications() {
           <div className="w-16 h-1 bg-primary mt-4" />
         </div>
 
-        {/* Category Filter */}
         <div className="flex flex-wrap gap-2 mb-10">
           {categories.map((cat) => (
             <button
@@ -271,7 +270,6 @@ export default function Certifications() {
           ))}
         </div>
 
-        {/* Certificates Grid */}
         <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredCerts.map((cert) => (
             <div
