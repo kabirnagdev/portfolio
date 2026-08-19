@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import anime from 'animejs';
-import { Cloud, Bot, Sparkles, Briefcase, Rocket, Award, Trophy, Code, X, ExternalLink, GraduationCap } from 'lucide-react';
+import { Cloud, Bot, Sparkles, Briefcase, Rocket, Trophy, Code, X } from 'lucide-react';
 
 // Certificate data with all your certifications
 const certifications = [
@@ -15,6 +15,7 @@ const certifications = [
     description: 'Certified AI Foundations Associate recognized by Oracle Corporation for cloud infrastructure and AI fundamentals.',
     Icon: Cloud,
     category: 'cloud',
+    highlight: true,
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const certifications = [
     description: 'Comprehensive training on generative AI concepts, applications, and possibilities in modern technology.',
     Icon: Sparkles,
     category: 'ai',
+    highlight: true,
   },
   {
     id: 3,
@@ -33,8 +35,9 @@ const certifications = [
     description: 'Foundational knowledge in cloud computing concepts, AWS services, and cloud architecture.',
     Icon: Cloud,
     category: 'cloud',
+    highlight: true,
   },
-     {
+  {
     id: 4,
     title: 'Design Thinking: Insights to Inspiration ',
     issuer: 'University of Virginia',
@@ -51,8 +54,9 @@ const certifications = [
     description: 'Badge earned for completing machine learning foundations training covering ML concepts and AWS ML services.',
     Icon: Bot,
     category: 'ai',
+    highlight: true,
   },
-    {
+  {
     id: 6,
     title: 'The Bits and Bytes of Computer Networking',
     issuer: 'Google',
@@ -60,6 +64,7 @@ const certifications = [
     description: 'Covered from the fundamentals of modern networking technologies and protocols to an overview of the cloud to practical applications and network troubleshooting',
     Icon: Code,
     category: 'programming',
+    highlight: true,
   },
   {
     id: 7,
@@ -69,7 +74,8 @@ const certifications = [
     description: "Participated in India's Biggest GenAI Buildathon as part of the OpenAI Academy Learning Community.",
     Icon: Sparkles,
     category: 'ai',
-  },   {
+  },
+  {
     id: 8,
     title: 'Operating Systems Fundamentals',
     issuer: 'Akamai Technologies',
@@ -78,7 +84,7 @@ const certifications = [
     Icon: Bot,
     category: 'programming',
   },
-    {
+  {
     id: 9,
     title: 'Introduction to Tech Entrepreneurship',
     issuer: 'IIT Bombay',
@@ -86,6 +92,7 @@ const certifications = [
     description: 'Dive into the entrepreneurial process to understand what makes tech ventures successful.',
     Icon: Briefcase,
     category: 'business',
+    highlight: true,
   },
   {
     id: 10,
@@ -95,6 +102,7 @@ const certifications = [
     description: 'Achieved 100+ days of consistent problem solving on LeetCode, demonstrating dedication to algorithmic skills.',
     Icon: Code,
     category: 'achievement',
+    highlight: true,
   },
   {
     id: 11,
@@ -114,7 +122,7 @@ const certifications = [
     Icon: Code,
     category: 'programming',
   },
-     {
+  {
     id: 13,
     title: 'Introduction to Microprocessors',
     issuer: 'Arm',
@@ -122,6 +130,7 @@ const certifications = [
     description: 'Learned about the basics of computer architecture, microprocessors and CPUs',
     Icon: Sparkles,
     category: 'programming',
+    highlight: true,
   },
   {
     id: 14,
@@ -140,6 +149,7 @@ const certifications = [
     description: 'Completed practical coding and development tasks simulating real-world technology consulting work.',
     Icon: Briefcase,
     category: 'experience',
+    highlight: true,
   },
   {
     id: 16,
@@ -149,8 +159,9 @@ const certifications = [
     description: 'Emerged as National Finalist as Team AlphaQ in the Strategy Conquest competition.',
     Icon: Trophy,
     category: 'achievement',
+    highlight: true,
   },
-    {
+  {
     id: 17,
     title: 'IEEE Innovation Expo 2026',
     issuer: 'WIE Club',
@@ -158,17 +169,19 @@ const certifications = [
     description: 'Pitch our social app idea in front of judges from American Express and Samsung and got special mention.',
     Icon: Trophy,
     category: 'achievement',
+    highlight: true,
   },
 ];
 
 const categories = [
   { id: 'all', name: 'All' },
+  { id: 'highlights', name: 'Highlights' },
   { id: 'cloud', name: 'Cloud' },
   { id: 'ai', name: 'AI & ML' },
   { id: 'programming', name: 'Programming' },
   { id: 'achievement', name: 'Achievements' },
   { id: 'business', name: 'Business' },
-   { id: 'experience', name: 'Experience' },
+  { id: 'experience', name: 'Experience' },
 ];
 
 export default function Certifications() {
@@ -177,9 +190,11 @@ export default function Certifications() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
-  const filteredCerts = activeCategory === 'all' 
-    ? certifications 
-    : certifications.filter(cert => cert.category === activeCategory);
+  const filteredCerts = activeCategory === 'all'
+    ? certifications
+    : activeCategory === 'highlights'
+      ? certifications.filter(cert => cert.highlight)
+      : certifications.filter(cert => cert.category === activeCategory);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -210,14 +225,10 @@ export default function Certifications() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
-  // Re-animate when category changes
   useEffect(() => {
     anime({
       targets: gridRef.current?.querySelectorAll('.cert-card'),
@@ -229,22 +240,14 @@ export default function Certifications() {
     });
   }, [activeCategory]);
 
-  const handleCardClick = (cert: typeof certifications[0]) => {
-    setSelectedCert(cert);
-  };
-
-  const closeModal = () => {
-    setSelectedCert(null);
-  };
+  const handleCardClick = (cert: typeof certifications[0]) => setSelectedCert(cert);
+  const closeModal = () => setSelectedCert(null);
 
   return (
     <section id="certifications" ref={sectionRef} className="relative py-20 px-4 sm:px-6 lg:px-8">
       <div className="relative z-10 max-w-6xl mx-auto">
-        {/* Section Title */}
         <div className="mb-12 section-title opacity-0">
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">
-            Certifications & Achievements
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-2">Certifications & Achievements</h2>
           <p className="text-muted-foreground mt-4 max-w-2xl">
             A collection of professional certifications, course completions, and achievements that demonstrate my commitment to continuous learning.
           </p>
@@ -277,28 +280,30 @@ export default function Certifications() {
               className="cert-card relative group cursor-pointer overflow-hidden rounded-xl border border-primary/10 hover:border-primary/40 transition-all duration-300 bg-secondary/20"
             >
               <div className="p-5">
-                {/* Header */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="p-2.5 bg-primary/10 rounded-xl border border-primary/20 group-hover:bg-primary/20 transition-colors">
                     <cert.Icon className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-xs text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
-                    {cert.issuedDate}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    {cert.highlight && (
+                      <span className="text-[10px] uppercase tracking-wider text-primary border border-primary/20 bg-primary/5 px-2 py-1 rounded-full">
+                        Highlight
+                      </span>
+                    )}
+                    <span className="text-xs text-muted-foreground bg-secondary/50 px-2 py-1 rounded-full">
+                      {cert.issuedDate}
+                    </span>
+                  </div>
                 </div>
 
-                {/* Content */}
                 <div>
                   <p className="text-xs text-primary font-medium mb-1">{cert.issuer}</p>
                   <h3 className="font-semibold text-foreground leading-tight mb-2 group-hover:text-primary transition-colors">
                     {cert.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground line-clamp-2">
-                    {cert.description}
-                  </p>
+                  <p className="text-xs text-muted-foreground line-clamp-2">{cert.description}</p>
                 </div>
 
-                {/* View indicator */}
                 <div className="mt-4 flex items-center gap-1 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity">
                   <span>View details</span>
                   <ExternalLink className="w-3 h-3" />
@@ -308,81 +313,38 @@ export default function Certifications() {
           ))}
         </div>
 
-        {/* Stats Summary */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="glass-card-hover p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-1">17+</div>
-            <p className="text-sm text-muted-foreground">Certifications</p>
-          </div>
-          <div className="glass-card-hover p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-1">9+</div>
-            <p className="text-sm text-muted-foreground">Platforms</p>
-          </div>
-          <div className="glass-card-hover p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-1">100+</div>
-            <p className="text-sm text-muted-foreground">Days LeetCode</p>
-          </div>
-          <div className="glass-card-hover p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-1">1</div>
-            <p className="text-sm text-muted-foreground">National Finalist</p>
-          </div>
+          <div className="glass-card-hover p-6 text-center"><div className="text-3xl font-bold text-primary mb-1">17+</div><p className="text-sm text-muted-foreground">Certifications</p></div>
+          <div className="glass-card-hover p-6 text-center"><div className="text-3xl font-bold text-primary mb-1">9+</div><p className="text-sm text-muted-foreground">Platforms</p></div>
+          <div className="glass-card-hover p-6 text-center"><div className="text-3xl font-bold text-primary mb-1">100+</div><p className="text-sm text-muted-foreground">Days LeetCode</p></div>
+          <div className="glass-card-hover p-6 text-center"><div className="text-3xl font-bold text-primary mb-1">1</div><p className="text-sm text-muted-foreground">National Finalist</p></div>
         </div>
 
-        {/* Skill Tags */}
         <div className="mt-10 flex flex-wrap gap-2 justify-center">
           {['Cloud Computing', 'Machine Learning', 'Generative AI', 'Java', 'Python', 'Entrepreneurship', 'Problem Solving'].map((skill) => (
-            <span
-              key={skill}
-              className="px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-xs text-primary"
-            >
-              {skill}
-            </span>
+            <span key={skill} className="px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-xs text-primary">{skill}</span>
           ))}
         </div>
       </div>
 
-      {/* Modal for Certificate Detail */}
       {selectedCert && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
-          onClick={closeModal}
-        >
-          <div 
-            className="relative max-w-lg w-full bg-background border border-primary/20 rounded-2xl overflow-hidden shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Close button */}
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 z-10 p-2 bg-background/80 rounded-full hover:bg-primary/20 transition-colors"
-            >
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm" onClick={closeModal}>
+          <div className="relative max-w-lg w-full bg-background border border-primary/20 rounded-2xl overflow-hidden shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <button onClick={closeModal} className="absolute top-4 right-4 z-10 p-2 bg-background/80 rounded-full hover:bg-primary/20 transition-colors">
               <X className="w-5 h-5 text-foreground" />
             </button>
-
-            {/* Header with gradient */}
             <div className="relative h-32 bg-gradient-to-br from-primary/20 to-secondary/30 flex items-center justify-center">
               <div className="p-4 bg-background/20 rounded-2xl backdrop-blur-sm border border-primary/20">
                 <selectedCert.Icon className="w-12 h-12 text-primary" />
               </div>
             </div>
-
-            {/* Content */}
             <div className="p-6">
               <span className="text-sm text-primary font-medium">{selectedCert.issuer}</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">{selectedCert.title}</h3>
               <p className="text-muted-foreground mb-4">{selectedCert.description}</p>
-
               <div className="flex flex-wrap gap-4 text-sm pt-4 border-t border-primary/10">
-                <div>
-                  <span className="text-muted-foreground">Issued: </span>
-                  <span className="text-foreground font-medium">{selectedCert.issuedDate}</span>
-                </div>
-                {selectedCert.validUntil && (
-                  <div>
-                    <span className="text-muted-foreground">Valid Until: </span>
-                    <span className="text-foreground font-medium">{selectedCert.validUntil}</span>
-                  </div>
-                )}
+                <div><span className="text-muted-foreground">Issued: </span><span className="text-foreground font-medium">{selectedCert.issuedDate}</span></div>
+                {selectedCert.validUntil && <div><span className="text-muted-foreground">Valid Until: </span><span className="text-foreground font-medium">{selectedCert.validUntil}</span></div>}
               </div>
             </div>
           </div>
