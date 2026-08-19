@@ -6,7 +6,6 @@ import Hero from '@/components/sections/Hero';
 import Portfolio from '@/components/sections/Portfolio';
 import Connect from '@/components/sections/Connect';
 import Press from '@/components/sections/Press';
-import Experience from '@/components/sections/Experience';
 import LeetCodeStats from '@/components/sections/LeetCodeStats';
 import Certifications from '@/components/sections/Certifications';
 import HighlightsCertifications from '@/components/sections/HighlightsCertifications';
@@ -32,7 +31,6 @@ export default function Home() {
       <Hero />
       <Portfolio />
       <Press />
-      <Experience />
       <LeetCodeStats />
       <Education />
       <HighlightsCertifications />
