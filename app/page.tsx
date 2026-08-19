@@ -8,7 +8,6 @@ import Connect from '@/components/sections/Connect';
 import Press from '@/components/sections/Press';
 import LeetCodeStats from '@/components/sections/LeetCodeStats';
 import Certifications from '@/components/sections/Certifications';
-import HighlightsCertifications from '@/components/sections/HighlightsCertifications';
 import Education from '@/components/sections/Education';
 import Navigation from '@/components/Navigation';
 import FloatingElements from '@/components/FloatingElements';
@@ -17,6 +16,7 @@ const Background3D = dynamic(() => import('@/components/Background3D'), { ssr: f
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
@@ -33,10 +33,11 @@ export default function Home() {
       <Press />
       <LeetCodeStats />
       <Education />
-      <HighlightsCertifications />
       <Certifications />
       <Connect />
-      <footer className="relative z-10 border-t border-border py-8 px-4 text-center text-muted-foreground"><p className="text-sm">&lt;/&gt; Crafted with code and creativity • 2026</p></footer>
+      <footer className="relative z-10 border-t border-border py-8 px-4 text-center text-muted-foreground">
+        <p className="text-sm">&lt;/&gt; Crafted with code and creativity • 2026</p>
+      </footer>
     </div>
   );
 }
