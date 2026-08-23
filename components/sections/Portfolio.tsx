@@ -24,7 +24,7 @@ const projects = [
         type: 'github',
       },
     ],
-    image: 'https://private-user-images.githubusercontent.com/174309715/639967762-fa3a3286-7827-4322-9f7b-c4df9e55b677.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODc0NzMyMDksIm5iZiI6MTc4NzQ3MjkwOSwicGF0aCI6Ii8xNzQzMDk3MTUvNjM5OTY3NzYyLWZhM2EzMjg2LTc4MjctNDMyMi05ZjdiLWM0ZGY5ZTU1YjY3Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgyM1QwODE1MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YTIzNDE1MTkwZmNlZmMwODA0YTgxYzRhMzQ2ZDk4NGFiMThjYTIzOGJkNWJlZGJmNTk3M2Y2YmJkMTE4YTM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.lfCsPaRTRU3WTIonOrsZC4GcAPC_x8SPULdSJLskYCU', // Bustling city road for neighborhood app
+    image: 'https://i.pinimg.com/736x/d4/47/d7/d447d771b4200a276a0b111ad6b0f061.jpg', // Bustling city road for neighborhood app
   },
           {
     id: 2,
