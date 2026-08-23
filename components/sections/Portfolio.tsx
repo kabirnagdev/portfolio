@@ -7,6 +7,27 @@ import ProjectCard from '@/components/ProjectCard';
 const projects = [
      {
     id: 1,
+    title: 'Atlas LM ',
+    subtitle: 'Unified Rag Pipeline ',
+    description: 'This project is designed for document Q&A workflows, research assistants, and knowledge retrieval from PDF-based sources.',
+    tech: ['Langchain','Pymupdf','Chromadb' ],
+    color: 'from-primary to-secondary',
+    links: [
+      {
+        label: 'View Online',
+        url: 'https://atlas-rag.streamlit.app/',
+        type: 'external',
+      },
+             {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/atlas',
+        type: 'github',
+      },
+    ],
+    image: 'https://private-user-images.githubusercontent.com/174309715/639967762-fa3a3286-7827-4322-9f7b-c4df9e55b677.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODc0NzMyMDksIm5iZiI6MTc4NzQ3MjkwOSwicGF0aCI6Ii8xNzQzMDk3MTUvNjM5OTY3NzYyLWZhM2EzMjg2LTc4MjctNDMyMi05ZjdiLWM0ZGY5ZTU1YjY3Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgyM1QwODE1MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YTIzNDE1MTkwZmNlZmMwODA0YTgxYzRhMzQ2ZDk4NGFiMThjYTIzOGJkNWJlZGJmNTk3M2Y2YmJkMTE4YTM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.lfCsPaRTRU3WTIonOrsZC4GcAPC_x8SPULdSJLskYCU', // Bustling city road for neighborhood app
+  },
+          {
+    id: 1,
     title: 'Your Neighbourhood ',
     subtitle: 'A Local Social Discovery Mobile App',
     description: 'Create hangouts as easy as posting on social media. No event planner complexity',
