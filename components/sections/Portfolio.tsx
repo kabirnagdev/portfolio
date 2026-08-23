@@ -27,7 +27,7 @@ const projects = [
     image: 'https://private-user-images.githubusercontent.com/174309715/639967762-fa3a3286-7827-4322-9f7b-c4df9e55b677.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODc0NzMyMDksIm5iZiI6MTc4NzQ3MjkwOSwicGF0aCI6Ii8xNzQzMDk3MTUvNjM5OTY3NzYyLWZhM2EzMjg2LTc4MjctNDMyMi05ZjdiLWM0ZGY5ZTU1YjY3Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwODIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDgyM1QwODE1MDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YTIzNDE1MTkwZmNlZmMwODA0YTgxYzRhMzQ2ZDk4NGFiMThjYTIzOGJkNWJlZGJmNTk3M2Y2YmJkMTE4YTM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.lfCsPaRTRU3WTIonOrsZC4GcAPC_x8SPULdSJLskYCU', // Bustling city road for neighborhood app
   },
           {
-    id: 1,
+    id: 2,
     title: 'Your Neighbourhood ',
     subtitle: 'A Local Social Discovery Mobile App',
     description: 'Create hangouts as easy as posting on social media. No event planner complexity',
@@ -43,7 +43,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1592626480256-96462f728137?q=80&w=800', // Bustling city road for neighborhood app
   },
     {
-    id: 2,
+    id: 3,
     title: 'HCC Diagnosis',
     subtitle: 'By CNN 2D Slicing MobileNet-V2 ',
     description: 'A computationally efficient framework utilising the MobileNet-V2 architecture for slice-level HCC classification.',
@@ -65,7 +65,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: 'Team Canvas',
     subtitle: 'Collaborative Infinite Whiteboard Platform',
     description: 'a premium, unified workspace that merges the freedom of an infinite canvas with the speed of real-time collaboration.',
@@ -81,7 +81,7 @@ const projects = [
     image: 'https://i.pinimg.com/1200x/79/8d/6c/798d6cc030e2e07825773bdd08b8f4b6.jpg', // Dashboard/data management
   },
   {
-    id: 4,
+    id: 5,
     title: 'Calorie & Nutrition AI',
     subtitle: 'AI-Powered Health Analysis',
     description: 'AI system analyzing nutritional data with visualization and health insights.',
