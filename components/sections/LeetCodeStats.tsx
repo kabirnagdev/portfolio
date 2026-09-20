@@ -9,19 +9,19 @@ export default function LeetCodeStats() {
   const progressRefs = useRef<HTMLDivElement[]>([]);
 
   const stats = [
-    { language: 'Python3', solved: 72, color: '#3b82f6' },
-    { language: 'C++', solved: 32, color: '#10b981' },
+    { language: 'Python3', solved: 130, color: '#3b82f6' },
+    { language: 'C++', solved: 40, color: '#10b981' },
     { language: 'Pandas', solved: 15, color: '#f59e0b' },
     { language: 'Java', solved: 1, color: '#ef4444' },
   ];
 
-  const totalSolved = 115;
-  const acceptance = 67.7;
-  const submissions = 288;
-  const beatsPercentage = 83.2;
-  const easyProblems = 74;
-  const mediumProblems = 36;
-  const hardProblems = 5;
+  const totalSolved = 180;
+  const acceptance = 68.7;
+  const submissions = 394;
+  const beatsPercentage = 91.4;
+  const easyProblems = 100;
+  const mediumProblems = 66;
+  const hardProblems = 14;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
