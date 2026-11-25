@@ -56,7 +56,7 @@ const projects = [
     color: 'from-primary to-secondary',
     links: [
       {
-        label: 'View Online',
+        label: 'Play Store',
         url: 'https://play.google.com/store/apps/details?id=com.yanegi.app',
         type: 'external',
       },
