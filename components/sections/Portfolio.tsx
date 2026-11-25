@@ -5,8 +5,29 @@ import anime from 'animejs';
 import ProjectCard from '@/components/ProjectCard';
 
 const projects = [
-     {
+          {
     id: 1,
+    title: 'Lavaloon Terminal ',
+    subtitle: 'Graph RAG Financial Insight Platform',
+    description: 'Beyond Traditional RAG. Combining vector similarity, entity relationships and graph traversal to retrieve connected financial insights.',
+    tech: ['Python', 'FastAPI', 'Next.js', 'RAG ', 'Knowledge Graph' , 'Pytest' ],
+    color: 'from-primary to-secondary',
+    links: [
+      {
+        label: 'View Online',
+        url: 'https://lavaloon-terminal.vercel.app/',
+        type: 'external',
+      },
+             {
+        label: 'View on GitHub',
+        url: 'https://github.com/kabirnagdev/lavaloon-terminal',
+        type: 'github',
+      },
+    ],
+    image: 'https://i.pinimg.com/736x/bf/13/c2/bf13c29bd9a5b00b90e73c7b0c611f9e.jpg', // Bustling city road for neighborhood app
+  },
+     {
+    id: 2,
     title: 'Atlas LM ',
     subtitle: 'Unified Rag Pipeline ',
     description: 'This project is designed for document Q&A workflows, research assistants, and knowledge retrieval from PDF-based sources.',
@@ -27,7 +48,7 @@ const projects = [
     image: 'https://i.pinimg.com/736x/d4/47/d7/d447d771b4200a276a0b111ad6b0f061.jpg', // Bustling city road for neighborhood app
   },
           {
-    id: 2,
+    id: 3,
     title: 'Your Neighbourhood ',
     subtitle: 'A Local Social Discovery Mobile App',
     description: 'Create hangouts as easy as posting on social media. No event planner complexity',
@@ -43,7 +64,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1592626480256-96462f728137?q=80&w=800', // Bustling city road for neighborhood app
   },
     {
-    id: 3,
+    id: 4,
     title: 'HCC Diagnosis',
     subtitle: 'By CNN 2D Slicing MobileNet-V2 ',
     description: 'A computationally efficient framework utilising the MobileNet-V2 architecture for slice-level HCC classification.',
@@ -65,7 +86,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'Team Canvas',
     subtitle: 'Collaborative Infinite Whiteboard Platform',
     description: 'a premium, unified workspace that merges the freedom of an infinite canvas with the speed of real-time collaboration.',
@@ -81,7 +102,7 @@ const projects = [
     image: 'https://i.pinimg.com/1200x/79/8d/6c/798d6cc030e2e07825773bdd08b8f4b6.jpg', // Dashboard/data management
   },
   {
-    id: 5,
+    id: 6,
     title: 'Calorie & Nutrition AI',
     subtitle: 'AI-Powered Health Analysis',
     description: 'AI system analyzing nutritional data with visualization and health insights.',
